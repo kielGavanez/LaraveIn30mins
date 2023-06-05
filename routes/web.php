@@ -1,5 +1,10 @@
 <?php
 
+use App\Http\Controllers\AnimationController;
+use App\Http\Controllers\ContactsController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TasksController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,22 +18,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', [HomeController::class,'Index'])->name('home');
 
-Route::get('/profile', function () {
-    return view('profile');
-})->name('profile');
+Route::get('/profile', [ProfileController::class,'Index'])->name('profile');
 
-Route::get('/contacts', function () {
-    return view('contacts');
-})->name('contacts');
+Route::get('/animation', [AnimationController::class,'Index'])->name('animation');
 
-Route::get('/animation', function () {
-    return view('animation');
-})->name('animation');
+Route::get('/contacts', [ContactsController::class,'Index'])->name('contacts');
 
-Route::get('/tasks', function () {
-    return view('tasks');
-})->name('tasks');
+Route::get('/tasks', [TasksController::class,'Index'])->name('tasks');
