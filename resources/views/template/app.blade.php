@@ -9,11 +9,11 @@
 <body>
     <header>
         <nav>
-            <a href="">Home</a>
-            <a href="">Profile</a>
-            <a href="">Contact Us</a>
-            <a href="">Animation</a>
-            <a href="">Tasks</a>
+            <a href="{{route('home')}}">Home</a>
+            <a href="{{route('profile')}}">Profile</a>
+            <a href="{{route('contacts')}}">Contact Us</a>
+            <a href="{{route('animation')}}">Animation</a>
+            <a href="{{route('tasks')}}">Tasks</a>
         </nav>
     </header>
     @yield('content')
