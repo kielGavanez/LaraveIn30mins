@@ -5,9 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        header{
+            background-color: aqua;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+        
+        }
+        a {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif            
+        }
+    </style>
+  
 </head>
 <body>
-    <header>
+    <header >
         <nav>
             <a href="{{route('home')}}">Home</a>
             <a href="{{route('profile')}}">Profile</a>
