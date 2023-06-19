@@ -27,6 +27,7 @@
             <a href="{{route('contacts')}}">Contact Us</a>
             <a href="{{route('animation')}}">Animation</a>
             <a href="{{route('tasks')}}">Tasks</a>
+            <a href="{{route('login')}}">Log in</a>
         </nav>
     </header>
     @yield('content')
